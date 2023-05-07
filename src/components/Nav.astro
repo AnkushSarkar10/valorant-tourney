@@ -1,0 +1,50 @@
+---
+
+const logo = "/valshowdown_logo_transparent.png";
+// const { href, title, body } = Astro.props;
+---
+
+<div class="container">
+    <div >
+        <img class="logo" src={logo}> </img>
+    </div>
+
+    <a><h3 class="buttonText">Home</h3></a>
+    <a><h3 class="buttonText">Details</h3></a>
+    <a><img src=/twitch-icon.svg class="twitch"></img></a>
+    <a><img src="/discord-icon.svg" class="disc"></img></a>
+    <button class="signUpButton"><h3 class="buttonText2">Sign Up</h3></button>
+
+</div>
+<style>
+    @import url("https://fonts.cdnfonts.com/css/valorant");
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .buttonText{
+        font-family: "VALORANT";
+        color: #ff5757;
+    }
+    .buttonText2{
+        font-family: "VALORANT";
+        color: white;
+    }
+    .signUpButton{
+        background-color: #ff5757;
+        padding: 0.25rem 0.25rem;
+        border-radius: 5px;
+    }
+    .logo{
+        height: 60px;
+        flex:2;
+    }
+    .twitch{
+        height: 30px
+    }
+    .disc{
+        height:30px;
+    }
+</style>
