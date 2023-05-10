@@ -14,7 +14,6 @@ const logo = "/valshowdown_logo_transparent.png";
     <a><img src=/twitch-icon.svg class="twitch"></img></a>
     <a><img src="/discord-icon.svg" class="disc"></img></a>
     <button class="signUpButton"><h3 class="buttonText2">Sign Up</h3></button>
-
 </div>
 <style>
     @import url("https://fonts.cdnfonts.com/css/valorant");
@@ -22,11 +21,13 @@ const logo = "/valshowdown_logo_transparent.png";
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around ;
     }
     .buttonText{
         font-family: "VALORANT";
         color: #ff5757;
+        padding: 0 0.5rem;
+        flex: 1;
     }
     .buttonText2{
         font-family: "VALORANT";
@@ -36,15 +37,20 @@ const logo = "/valshowdown_logo_transparent.png";
         background-color: #ff5757;
         padding: 0.25rem 0.25rem;
         border-radius: 5px;
+        
     }
     .logo{
         height: 60px;
-        flex:2;
+        flex:3;
     }
     .twitch{
-        height: 30px
+        max-height: 30px;
+        flex :1;
+        padding: 0 0.5rem;
     }
     .disc{
-        height:30px;
+        max-height:30px;
+        flex : 1;
+        padding: 0 0.5rem;
     }
 </style>

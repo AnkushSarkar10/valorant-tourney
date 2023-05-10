@@ -8,7 +8,14 @@ import Nav from "../components/Nav.astro";
         <h1 class="text-3xl lg:text-8xl font-bold mb-2 text-center">Valorant Showdown</h1>
         <h1 class="text-3xl lg:text-8xl font-bold">2.0</h1>
         <h3 class="lg:text-3xl font-extralight mt-2">(coming soon)</h3>
+        <!-- <button class="liveBracketButton"> <h2 class="liveBracketText"> View Live Bracket </h2></button> -->
+        <a href='#'> Live Bracket </a>
+        <!-- some sort of photo gallery component here -->
+        <a href='#'> Details </a>
+        <a href='#'> Sign Up </a>
+        <a href='#'> FAQ </a>
     </main>
+    
 </Layout>
 
 <style>
@@ -25,4 +32,23 @@ import Nav from "../components/Nav.astro";
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
     }
+    a{
+        margin-top: 2rem;
+        border-radius: 30px;
+        background: #FF4655;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        padding: 10px 30px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    a:hover{
+        letter-spacing: 0.25em;
+        background: #ff9446;
+        box-shadow: 0 0 35px #ff9446;
+    }
+    
 </style>
