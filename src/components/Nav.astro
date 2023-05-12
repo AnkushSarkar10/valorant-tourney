@@ -4,16 +4,18 @@ const logo = "/valshowdown_logo_transparent.png";
 ---
 
 <div
-    class="flex flex-wrap items-center text-xl font-medium gap-12 w-full py-4 px-32"
+    class="flex flex-wrap items-center justify-around text-xl font-medium w-full py-4 px-32"
 >
     <img src={logo} alt="" class="w-16" />
-    <h2 class="ml-auto border-b-4 border-indigo-500">Home</h2>
-    <h2>About</h2>
-    <h2>Bracket</h2>
-    <Icon name="ph:twitch-logo" class="w-10" />
-    <Icon name="simple-icons:discord" class="w-9" />
+    <div class="flex gap-10 items-center">
+        <h2 class="border-b-4 border-indigo-500">Home</h2>
+        <h2>About</h2>
+        <h2>Bracket</h2>
+        <!-- <Icon name="ph:twitch-logo" class="w-10" />
+        <Icon name="simple-icons:discord" class="w-9" /> -->
+    </div>
     <button
-        class="px-5 py-2 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 hover:from-indigo-700 hover:to-indigo-700 rounded-lg "
+        class="px-6 py-2.5 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 hover:from-indigo-700 hover:to-indigo-700 rounded-lg "
         >Sign up</button
     >
 </div>
