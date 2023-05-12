@@ -1,53 +1,21 @@
 ---
-
+import { Icon } from "astro-icon";
 const logo = "/valshowdown_logo_transparent.png";
-// const { href, title, body } = Astro.props;
 ---
 
-<div class="container">
-    <div >
-        <img class="logo" src={logo}> </img>
-    </div>
-
-    <a href="/"><h3 class="buttonText">Home</h3></a>
-    <a href="details"><h3 class="buttonText">Details</h3></a>
-    <a href="https://www.instagram.com/valorantshowdownmarkham/"><img src=/insta-icon.svg class="icon"></img></a>
-    <a href="https://www.tiktok.com/@valorantshowdown?_t=8cBhjaQaRvn&_r=1"><img src=/tiktok-white-icon.svg class="icon"></img></a>
-    <a href="https://www.twitch.tv/korotv_"><img src=/twitch-icon.svg class="icon tiktok"></img></a>
-    <a href="https://discord.gg/srPM4REjKa"><img src="/discord-icon.svg" class="icon"></img></a>
-    <button class="signUpButton"><h3 class="buttonText2">Sign Up</h3></button>
+<div
+    class="flex flex-wrap items-center text-xl font-medium gap-12 w-full py-4 px-32"
+>
+    <img src={logo} alt="" class="w-16" />
+    <h2 class="ml-auto border-b-4 border-indigo-500">Home</h2>
+    <h2>About</h2>
+    <h2>Bracket</h2>
+    <Icon name="ph:twitch-logo" class="w-10" />
+    <Icon name="simple-icons:discord" class="w-9" />
+    <button
+        class="px-5 py-2 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 hover:from-indigo-700 hover:to-indigo-700 rounded-lg "
+        >Sign up</button
+    >
 </div>
-<style>
-    @import url("https://fonts.cdnfonts.com/css/valorant");
-    .container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around ;
-    }
-    .buttonText{
-        font-family: "VALORANT";
-        color: #ff5757;
-        padding: 0 0.5rem;
-        flex: 1;
-    }
-    .buttonText2{
-        font-family: "VALORANT";
-        color: white;
-    }
-    .signUpButton{
-        background-color: #ff5757;
-        padding: 0.25rem 0.25rem;
-        border-radius: 5px;
-        
-    }
-    .logo{
-        height: 60px;
-        flex:3;
-    }
-    .icon{
-        max-height: 30px;
-        flex :1;
-        padding: 0 0.5rem;
-    }
-</style>
+
+<style></style>
