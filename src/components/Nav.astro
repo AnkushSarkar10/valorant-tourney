@@ -2,6 +2,7 @@
 const currentPath = Astro.url.pathname;
 const logo = "/valshowdown_logo_transparent.png";
 const navBarActiveClass = `border-b-4 border-indigo-500`;
+const navBarHover = 'hover:border-b-4 border-red-600'
 ---
 
 <div
@@ -10,18 +11,20 @@ const navBarActiveClass = `border-b-4 border-indigo-500`;
     <a href="/"><img src={logo} alt="" class="w-12 mb-5 lg:mb-0 lg:w-16" /></a>
 
     <div class="flex gap-10 items-center">
-        <h2 class={currentPath === "/" ? navBarActiveClass : ``}>
+        <h2 class={currentPath === "/" ? navBarActiveClass : navBarHover}>
             <a href="/">Home</a>
         </h2>
-        <h2 class={currentPath === "/about" ? navBarActiveClass : ``}>
+        <h2 class={currentPath === "/about" ? navBarActiveClass : navBarHover}>
             <a href="/about">About</a>
         </h2>
-        <h2 class={currentPath === "/livebracket" ? navBarActiveClass : ``}>
+        <h2 class={currentPath === "/livebracket" ? navBarActiveClass : navBarHover}>
             <a href="/livebracket">Bracket</a>
         </h2>
     </div>
     <button
-        class="px-6 py-2.5 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 hover:from-indigo-700 hover:to-indigo-700 rounded-lg hidden lg:block"
+        class="px-6 py-2.5 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 
+        transition ease-in-out delay-75 
+        hover:from-[#ff4655] hover:to-indigo-700 rounded-lg hover:scale-110 hidden lg:block"
         >Sign up</button
     >
 </div>
