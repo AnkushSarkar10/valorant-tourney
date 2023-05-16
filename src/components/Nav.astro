@@ -2,7 +2,8 @@
 const currentPath = Astro.url.pathname;
 const logo = "/valshowdown_logo_transparent.png";
 const navBarActiveClass = `border-b-4 border-indigo-500`;
-const navBarHover = 'hover:border-b-4 border-red-600'
+// const navBarHover = 'hover:border-b-4 hover:border-red-600 hover:bg-white hover:text-black px-2'
+const navBarHover = 'hover:border-b-4 hover:border-red-600'
 ---
 
 <div
@@ -12,7 +13,7 @@ const navBarHover = 'hover:border-b-4 border-red-600'
 
     <div class="flex gap-10 items-center">
         <h2 class={currentPath === "/" ? navBarActiveClass : navBarHover}>
-            <a href="/">Home</a>
+            <a href="/">Home</a>    
         </h2>
         <h2 class={currentPath === "/about" ? navBarActiveClass : navBarHover}>
             <a href="/about">About</a>
