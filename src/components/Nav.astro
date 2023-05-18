@@ -3,7 +3,8 @@ const currentPath = Astro.url.pathname;
 const logo = "/valshowdown_logo_transparent.png";
 const navBarActiveClass = `border-b-4 border-indigo-500`;
 // const navBarHover = 'hover:border-b-4 hover:border-red-600 hover:bg-white hover:text-black px-2'
-const navBarHover = 'hover:border-b-4 hover:border-red-600'
+const navBarHover =
+    "hover:text-black hover:bg-slate-200 rounded px-3 py-1 transition-all duration-50";
 ---
 
 <div
@@ -12,20 +13,25 @@ const navBarHover = 'hover:border-b-4 hover:border-red-600'
     <a href="/"><img src={logo} alt="" class="w-12 mb-5 lg:mb-0 lg:w-16" /></a>
 
     <div class="flex gap-10 items-center">
-        <h2 class={currentPath === "/" ? navBarActiveClass : navBarHover}>
-            <a href="/">Home</a>    
-        </h2>
-        <h2 class={currentPath === "/about" ? navBarActiveClass : navBarHover}>
-            <a href="/about">About</a>
-        </h2>
-        <h2 class={currentPath === "/livebracket" ? navBarActiveClass : navBarHover}>
-            <a href="/livebracket">Bracket</a>
-        </h2>
+        <a
+            class={currentPath === "/" ? navBarActiveClass : navBarHover}
+            href="/">Home</a
+        >
+
+        <a
+            class={currentPath === "/about" ? navBarActiveClass : navBarHover}
+            href="/about">About</a
+        >
+
+        <a
+            class={currentPath === "/livebracket"
+                ? navBarActiveClass
+                : navBarHover}
+            href="/livebracket">Bracket</a
+        >
     </div>
     <button
-        class="px-6 py-2.5 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 
-        transition ease-in-out delay-75 
-        hover:from-[#ff4655] hover:to-indigo-700 rounded-lg hover:scale-110 hidden lg:block"
+        class="px-6 py-2.5 bg-gradient-to-r from-[#ff4655] from-10% to-indigo-700 transition ease-in-out delay-75 hover:from-[#ff4655] hover:to-indigo-700 rounded-lg hover:scale-110 hidden lg:block"
         >Sign up</button
     >
 </div>
