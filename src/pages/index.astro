@@ -9,19 +9,20 @@ import { Icon } from "astro-icon";
             <h1 class="text-5xl lg:text-7xl xl:text-7xl font-bold mb-2">
                 Valorant
             </h1>
-            <h1 class="text-5xl lg:text-7xl xl:text-7xl font-bold mb-2">
+            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold mb-2">
                 Showdown
             </h1>
             <h1 class="text-5xl lg:text-8xl xl:text-9xl font-bold">2.0</h1>
-
-            <div class="shine">
-                <h2 class="shinetext"> $2000 PRIZE POOL</h2>
+            <div class="flex flex-col items-center">
+                <h2 class="prizepool text-5xl pt-3"> $2000 PRIZE</h2>
+                <h2 class="prizepool text-5xl">POOL</h2>
             </div>
+
             <div
                 class="flex flex-col gap-7 items-center lg:items-start pt-10 text-center text-lg lg:text-xl font-medium"
             >
                 <button
-                    class="px-9 py-3 bg-[#ff4655] rounded-lg hover:bg-[#cc3844]"
+                    class="px-9 py-3 bg-[#ff4655] rounded-lg hover:bg-[#cc3844] btn-glow"
                     >Sign up</button
                 >
                 <div class="flex gap-5">
@@ -146,9 +147,24 @@ import { Icon } from "astro-icon";
         
     }
 
-
+    .prizepool{
+        font-family: "VALORANT", sans-serif;
+    }
     @keyframes shine {
         0% {background-position: -500%;}
         100% {background-position: 500%;}
+    }
+    .btn-glow {
+        /* box-shadow: 0 0 0 0 #ff4655; */
+        animation: glow 2.5s linear infinite;
+    }
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 0 0 #ff4655;
+        }
+        
+        25% {
+            box-shadow: 0 0 25px 0 #ff4655;
+        }
     }
 </style>
