@@ -1,7 +1,7 @@
 ---
 const currentPath = Astro.url.pathname;
 const logo = "/valshowdown_logo_transparent.png";
-const navBarActiveClass = `border-b-4 border-indigo-500`;
+const navBarActiveClass = `border-b-4 px-3 py-1 border-indigo-500`;
 // const navBarHover = 'hover:border-b-4 hover:border-red-600 hover:bg-white hover:text-black px-2'
 const navBarHover =
     "hover:text-black hover:bg-slate-200 rounded px-3 py-1 transition-all duration-50";
@@ -29,6 +29,10 @@ const navBarHover =
                 : navBarHover}
             href="/livebracket">Bracket</a
         >
+        <!-- <a
+        class={currentPath === "/signup" ? navBarActiveClass : navBarHover}
+        href="/signup">Sign Up</a
+        > -->
     </div>
     <a href="https://forms.gle/C7gnRtE6BMjhoJMG6">
     <button
