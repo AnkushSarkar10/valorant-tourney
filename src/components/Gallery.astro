@@ -1,0 +1,33 @@
+---
+export interface Props {
+	lists: String[];
+}
+
+const { lists } = Astro.props;
+---
+<div class="relative flex justify-around overflow-x-hidden">
+  <div
+    class="flex flex-row pt-20 animate-marquee3 lg:animate-marquee whitespace-nowrap"
+  >
+    {
+      lists.map((list) => (
+        <img
+          src={list}
+          class="w-h-20 lg:mx-4.5 mx-2 h-16 rounded-full border-4 hover:border-[#5884FB] md:h-20"
+        />
+      ))
+    }
+  </div>
+  <div
+    class="absolute flex flex-row pt-20 animate-marquee4 lg:animate-marquee2 whitespace-nowrap"
+  >
+    {
+      lists.map((list) => (
+        <img
+          src={list}
+          class="w-h-20 lg:mx-px mx-2 h-16 rounded-full border-4 hover:border-[#5884FB] md:h-20"
+        />
+      ))
+    }
+  </div>
+</div>
