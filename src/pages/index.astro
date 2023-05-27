@@ -1,79 +1,88 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import JetImg from "../components/JetImg.astro";
 import { Icon } from "astro-icon";
-
 ---
 
 <Layout title="Home">
-    <main class="w-full lg:pl-36 xl:pl-48 pt-32 pb-[30vh]">
-        <div class="flex flex-col items-center lg:items-start">
-            <h1 class="text-5xl md:text-7xl xl:text-7xl font-bold mb-2">
-                Valorant
-            </h1>
-            <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-2">
-                Showdown
-            </h1>
-             <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold">2.0</h1>
-            <div class="flex flex-wrap w-2/3 md:w-1/3 items-center">
-                <!-- <h2 class="text-2xl pt-3">Compete in our <span class="font-bold">$2000</span> prize pool Valorant LAN Event</h2> -->
-                <h2 class="md:text-xl pt-3">Level Up Your Game. Battle for a <span class="text-3xl md:text-4xl font-bold text-red-400">$2000</span> Prize Pool at Toronto's Premier <span class="prizepool font-bold text-red-400">Valorant</span> LAN Event! <br>  <span class="font-bold text-3xl md:text-5xl text-red-400 "> Starting August 5th</span></h2>
-                <!-- <h2 class="text-xl"></h2> -->
-            </div>
+    <main class="w-full lg:pl-36 xl:pl-48 pt-32 pb-20 md:pb-[30vh]">
+        <div class="flex">
+            <div class="flex grow flex-col items-center lg:items-start">
+                <h1 class="text-5xl md:text-7xl xl:text-7xl font-bold mb-2">
+                    Valorant
+                </h1>
+                <h1 class="text-4xl md:text-6xl xl:text-7xl font-bold mb-2">
+                    Showdown
+                </h1>
+                <h1 class="text-5xl md:text-7xl xl:text-8xl font-bold">2.0</h1>
+                <div class="flex flex-wrap w-2/3 md:w-3/5 items-center text-center md:text-left">
+                    <!-- <h2 class="text-2xl pt-3">Compete in our <span class="font-bold">$2000</span> prize pool Valorant LAN Event</h2> -->
+                    <h2 class="md:text-xl pt-3">
+                        Level Up Your Game. Battle for a <span
+                            class="text-2xl md:text-4xl font-semibold text-purple-400"
+                            >$2000</span
+                        > Prize Pool at Toronto's Premier <span
+                            class="prizepool font-bold text-red-400"
+                            >Valorant</span
+                        > LAN Event! <br />
+                        Starting
+                        <span
+                            class="font-semibold text-2xl md:text-4xl text-purple-400"
+                        >
+                            August 5th</span
+                        >
+                    </h2>
+                    <!-- <h2 class="text-xl"></h2> -->
+                </div>
 
-            <div
-                class="flex flex-col gap-7 items-center lg:items-start pt-10 text-center text-lg lg:text-xl font-medium"
-            >   <a href="https://forms.gle/C7gnRtE6BMjhoJMG6">
-                <button
-                    class="px-9 py-3 bg-[#ff4655] rounded-lg hover:bg-[#cc3844] btn-glow"
-                    >Sign up</button
-                ></a>
-                <div class="flex gap-5">
-                    <a href="https://www.twitch.tv/korotv_"
-                        ><button
-                            class="px-5 md:px-7 py-3 bg-violet-600 rounded-lg hover:bg-violet-700 flex items-center gap-2"
-                            >Twitch <Icon
-                                name="ph:twitch-logo"
-                                class="w-8"
-                            /></button
+                <div
+                    class="flex flex-col gap-7 items-center lg:items-start pt-10 text-center text-lg lg:text-xl font-medium"
+                >
+                    <a href="https://forms.gle/C7gnRtE6BMjhoJMG6">
+                        <button
+                            class="px-9 py-3 font-semibold bg-[#ff4655] rounded-lg hover:bg-[#cc3844] btn-glow"
+                            >Sign up</button
                         ></a
                     >
-                    <a href="https://discord.gg/srPM4REjKa"
-                        ><button
-                            class="px-5 md:px-7 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
-                            >Discord <Icon
-                                name="simple-icons:discord"
-                                class="w-8"
-                            /></button
-                        ></a
-                    >
-                    <!-- <a href="https://www.instagram.com/valorantshowdownmarkham/"><button
+                    <div class="flex gap-5">
+                        <a href="https://www.twitch.tv/korotv_"
+                            ><button
+                                class="px-5 md:px-7 py-3 bg-violet-600 rounded-lg hover:bg-violet-700 flex items-center gap-2"
+                                >Twitch <Icon
+                                    name="ph:twitch-logo"
+                                    class="w-8"
+                                /></button
+                            ></a
+                        >
+                        <a href="https://discord.gg/srPM4REjKa"
+                            ><button
+                                class="px-5 md:px-7 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 flex items-center gap-2"
+                                >Discord <Icon
+                                    name="simple-icons:discord"
+                                    class="w-8"
+                                /></button
+                            ></a
+                        >
+                        <!-- <a href="https://www.instagram.com/valorantshowdownmarkham/"><button
                     class="px-7 py-3 bg-[#E1306C] rounded-lg hover:bg-[#C13584] flex items-center gap-2"
                     >Instagram <Icon
                         name="simple-icons:instagram"
                         class="w-8"
                     /></button
                 ></a> -->
+                    </div>
                 </div>
             </div>
+            <JetImg />
         </div>
-        
-        <div
-            class="absolute top-20 right-0 overflow-x-hidden img-cont hidden lg:block"
-        >
+
+        <div class="pt-32 mb:pt-[30vh] pr-20">
+            <h2 class="text-5xl md:text-7xl mb-10 font-bold pl-10 lg:pl-2">
+                LOCATION
+            </h2>
             <div
-                class="absolute right-0 bg-purple-500 h-full w-full z-20 opacity-40"
+                class="flex flex-col md:flex-row justify-normal gap-5 md:gap-20 w-full"
             >
-            </div>
-            <img
-                src="/jett4k.jpg"
-                alt=""
-                width="90%"
-                class="relative -right-1/2"
-            />
-        </div>
-        <div class="pt-[30vh] pr-20">
-            <h2 class="text-5xl md:text-7xl mb-10 font-bold pl-10 lg:pl-2">LOCATION</h2>
-            <div class="flex flex-col md:flex-row justify-normal gap-5 md:gap-20 w-full">
                 <img
                     src="/rlcs.avif"
                     alt=""
@@ -81,18 +90,22 @@ import { Icon } from "astro-icon";
                     class="pl-10 md:pl-0 md:w-3/6 md:h-3/6"
                 />
                 <div class="flex flex-col">
-                    <p class="text-base md:text-lg mb-5 pl-16 md:pl-0 text-start md:text-right">
+                    <p
+                        class="text-base md:text-lg mb-5 pl-16 md:pl-0 text-start md:text-right"
+                    >
                         Quarter Finals and onwards will be held at <br />
-                        <span class="font-semibold text-sm md:text-2xl text-violet-300 ">
+                        <span
+                            class="font-semibold text-sm md:text-2xl text-violet-300"
+                        >
                             PlayerBase 7850 Woodbine Ave Unit #228, Markham, ON
                             L3R 0B9
                         </span>
                     </p>
                     <iframe
-                        class="pl-10 md:pl-0 w-full md:h-full self-end"
+                        class="pl-10 md:pl-0 w-full h-full aspect-square md:aspect-auto self-end"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11512.255134742893!2d-79.3739434128418!3d43.8337754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5ea41dd3b3d%3A0x3870168c0cec4afe!2z546p5ZKW5Z-65ZywIFBsYXllciBCYXNl!5e0!3m2!1sen!2sca!4v1684174141017!5m2!1sen!2sca"
                         style="border:0;"
-                        allowfullscreen=""
+                        allowfullscreen="true"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -120,22 +133,14 @@ import { Icon } from "astro-icon";
         -moz-text-fill-color: transparent;
     }
 
-    .img-cont > div,
-    img {
-        clip-path: polygon(0 2%, 100% 2%, 100% 90%, 0 90%);
-    }
-    .img-cont {
-        clip-path: circle(60% at 107% 22%);
-    }
-
-    .shinetext{
+    .shinetext {
         font-family: sans-serif;
         /* background-image: -webkit-linear-gradient(
             45deg,
             #1b2ef5 10%,
             #f80909 100%
         ); */
-        font-size: xx-large ;
+        font-size: xx-large;
         background: linear-gradient(45deg, #ffffff, #ffffff);
         background-size: 10%;
         -webkit-background-clip: text;
@@ -147,27 +152,30 @@ import { Icon } from "astro-icon";
         overflow: hidden;
         background-repeat: no-repeat;
         animation: shine 3s linear infinite;
-        
     }
 
-    .prizepool{
+    .prizepool {
         font-family: "VALORANT", sans-serif;
     }
     @keyframes shine {
-        0% {background-position: -500%;}
-        100% {background-position: 500%;}
+        0% {
+            background-position: -500%;
+        }
+        100% {
+            background-position: 500%;
+        }
     }
     .btn-glow {
         /* box-shadow: 0 0 0 0 #ff4655; */
-        animation: glow 2.5s linear infinite;
+        animation: glow 2.2s linear infinite;
     }
     @keyframes glow {
         0% {
             box-shadow: 0 0 0 0 #ff4655;
         }
-        
+
         25% {
-            box-shadow: 0 0 25px 0 #ff4655;
+            box-shadow: 0 0 11px 0 #ff4655;
         }
     }
 </style>
