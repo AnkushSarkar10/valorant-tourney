@@ -1,15 +1,22 @@
-<div class="w-6/12 mr-10 relative overflow-hidden rounded-bl-[20rem] rounded-tr-[8rem] img-cont hidden lg:block">
+<div
+    class="w-[40rem] mr-10 relative overflow-hidden rounded-bl-[20rem] rounded-tr-[8rem] img-cont hidden lg:block"
+>
     <div
-        class="absolute right-0 top-0 bg-violet-900 h-full w-full z-20 mix-blend-overlay"
+        class="image absolute right-0 top-0 bg-violet-100 mix-blend-lighten h-full w-full"
     >
     </div>
-    <img
-        src="/jett4k.jpg"
-        alt=""
-        width=""
-        class="scale-150 lg:translate-x-36 translate-y-24 object-fill h-full"
-    />
+    <div
+        class="absolute right-0 top-0 bg-violet-900 mix-blend-overlay h-full w-full"
+    >
+    </div>
 </div>
 
 <style>
+    .image {
+        background-image: url(/jett4k.jpg);
+        background-repeat: no-repeat;
+        background-size: 190%;
+        background-position-x: 10%;
+        background-position-y: 45%;
+    }
 </style>
